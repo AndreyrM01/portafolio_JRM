@@ -1,0 +1,24 @@
+// Variantes 
+$main-color: #2B2A30;
+$letters-color: #ffffff;
+$sub: #61616B;
+$sab: #3C3F46;
+$gray3: #383B42;
+$white_gray: #8D8B8C;
+$green: #6AADAE;
+$green2: #3C6A7A;
+$green3: #3E6C7C;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: $main-color;
+  font-family: 'Nunito', sans-serif;
+}
+
+@import'components/header.scss';
