@@ -1,0 +1,55 @@
+.home__container {
+  row-gap: 2.5rem; }
+
+.home-content {
+  display: grid;
+  row-gap: 2rem; }
+
+.home__data {
+  text-align: center; }
+
+.home__subtitle,
+.home__education {
+  font-size: 2rem; }
+
+.home__subtitle span,
+.home__title {
+  color: #61616B; }
+
+.home__title {
+  font-size: 2.5rem;
+  font-weight: 500; }
+
+.home__description {
+  margin-block: 1rem 1.5rem; }
+
+.home__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem; }
+
+.home__social-link {
+  display: flex;
+  margin-top: 20px;
+  background-color: #5b5f5f;
+  color: #ffffff;
+  font-size: 2rem;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform .4s; }
+
+.home__social-link:hover {
+  transform: translateY(-25rem);
+  -webkit-transform: translateY(-25rem);
+  -moz-transform: translateY(-25rem);
+  -ms-transform: translateY(-25rem);
+  -o-transform: translateY(-25rem); }
+
+.home__img {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

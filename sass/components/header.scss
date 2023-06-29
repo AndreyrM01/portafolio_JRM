@@ -1,0 +1,74 @@
+@import'./breakpoints.scss';
+
+.header{
+  position: fixed;
+  width: 100%;
+  background-color: #61616B;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav{
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.nav__logo span{
+  color: #6AADAE;
+}
+
+.nav__toggle,
+.nav__close{
+  display: flex;
+  font-size: 1.25rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(162, 100%, 30%, .25);
+    width: 65%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    transition: right .4s;
+  }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link{
+  color: #ffffff;
+  font-weight: 500;
+  transition: color .4s;
+}
+
+.nav__link:hover{
+  color: #61616B;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.show-menu{
+  right: 0;
+}

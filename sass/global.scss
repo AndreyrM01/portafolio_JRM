@@ -5,20 +5,61 @@ $sub: #61616B;
 $sab: #3C3F46;
 $gray3: #383B42;
 $white_gray: #8D8B8C;
-$green: #6AADAE;
+$green: #5b5f5f;
 $green2: #3C6A7A;
 $green3: #3E6C7C;
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
 }
 
 body{
   background-color: $main-color;
-  font-family: 'Nunito', sans-serif;
+  color: $letters-color;
+}
+
+.button{
+  display: inline-block;
+  background-color: #61616B;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  color: #ffffff;
+  font-weight: 500;
+  transition: box-shadow .4s;
+}
+
+
+.button:hover{
+  box-shadow: 0 8px 24px hsla(162, 100%, 40%, .25);
+}
+
+.section{
+  padding-top: 3.5rem;
+}
+
+.section__subtitle span,
+.section__title{
+  color: #61616B;
+}
+
+.section__title{
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 @import'components/header.scss';
+@import'components/home.scss';
+@import'components/breakpoints.scss';
+@import'components/contact.scss';
+@import'components/cv.scss';
+@import'components/footer.scss';
+@import'components/projects.scss';
